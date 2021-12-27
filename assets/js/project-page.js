@@ -37,7 +37,7 @@ if (window.location.pathname == '/project-page.html') {
             document.getElementById("videoPlayer").style.visibility="visibile";
             document.getElementById("videoPlayer2").style.visibility="visible";
             document.getElementById("videoPlayer3").style.visibility="visible"; 
-            skillBar1.style.width= '1090.000px'
+            skillBar1.style.width= '1240.000px'
             skillBarSpan.textContent = "99.7%"
             skillBar2.style.width = '10px'
             skillBarSpan2.textContent = "0.3%"
@@ -70,9 +70,9 @@ if (window.location.pathname == '/project-page.html') {
     break;
   case 'hotelverse':
        arrSlider[0].style.backgroundImage="url(ewmpics/hpms.gif)";
-       skillBar1.style.width= '900.000px'
+       skillBar1.style.width= '1180.000px'
        skillBarSpan.textContent = "95.3%"
-       skillBar2.style.width = '100px'
+       skillBar2.style.width = '60px'
        skillBarSpan2.textContent = "4.6%"
        skillBarLabel2.textContent = "CSS"
             //contributors
@@ -103,7 +103,7 @@ if (window.location.pathname == '/project-page.html') {
             arrSlider[0].style.backgroundImage="url(twitterappwalkthrough.gif)";
             arrSlider[1].style.backgroundImage="url(twitterAppPart2.gif)";
        
-       skillBar1.style.width= '1100.000px'
+       skillBar1.style.width= '1249.000px'
        skillBarSpan.textContent = "100.0%"
         skillBar2.style.visibility="hidden";
             skillBarSpan2.style.visibility="hidden";
@@ -138,7 +138,7 @@ if (window.location.pathname == '/project-page.html') {
             arrSlider[0].style.backgroundImage="url(InstagramParse.gif)";
             
        
-       skillBar1.style.width= '1100.000px'
+       skillBar1.style.width= '1249.000px'
        skillBarSpan.textContent = "100.0%"
         skillBar2.style.visibility="hidden";
             skillBarSpan2.style.visibility="hidden";
@@ -171,7 +171,7 @@ if (window.location.pathname == '/project-page.html') {
             arrSlider[0].style.backgroundImage="url(Flixter.gif)";
             
        
-       skillBar1.style.width= '1100.000px'
+       skillBar1.style.width= '1249.000px'
        skillBarSpan.textContent = "100.0%"
         skillBar2.style.visibility="hidden";
             skillBarSpan2.style.visibility="hidden";
@@ -202,7 +202,7 @@ if (window.location.pathname == '/project-page.html') {
             arrSlider[1].style.backgroundImage="url(https://raw.githubusercontent.com/wgalindo1453/Motivate2/master/swipe1.PNG";
             
        
-       skillBar1.style.width= '1100.000px'
+       skillBar1.style.width= '1249.000px'
        skillBarSpan.textContent = "100.0%"
         skillBar2.style.visibility="hidden";
             skillBarSpan2.style.visibility="hidden";
