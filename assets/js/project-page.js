@@ -53,7 +53,7 @@ if (window.location.pathname == '/project-page.html') {
             contr3Link.href = "https://github.com/The-Yigit"
             contr3Name.innerHTML = "Yigit"
             document.getElementById("resourcelink").href="https://github.com/EventWithMe/EventWithMe"
-             document.getElementById("logo").src="event-with-me-logo.png"
+             document.getElementById("logo").src="event-with-melogo.png"
   //   document.getElementById("award").textContent = " Third place Code Path Nationals"
              document.getElementById("videoPlayer").src = ewmURL[2];
              document.getElementById("videoPlayer2").src = ewmURL[1];
