@@ -1,6 +1,5 @@
 if (window.location.pathname == '/index.html') {
    
-
  
     
  

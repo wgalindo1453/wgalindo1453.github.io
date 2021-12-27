@@ -1,7 +1,8 @@
 
 if (window.location.pathname == '/projects-grid-cards.html') {
    
-
+//document.getElementById("funProject1").src = "https://i.imgur.com/xos9GKH.png"
+ // document.getElementById("funProject2").src = "https://i.imgur.com/xos9GKH.png"
  
     
      document.getElementById("Persist").onclick = function() {

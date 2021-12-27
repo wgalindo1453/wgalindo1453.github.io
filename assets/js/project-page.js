@@ -20,7 +20,10 @@ if (window.location.pathname == '/project-page.html') {
     var contr1Name = document.getElementById("contr1Name");
     var contr2Name = document.getElementById("contr2Name");
     var contr3Name = document.getElementById("contr3Name");
-    
+    var mp1 = document.getElementById("moreProjects1");
+    var mp2 = document.getElementById("moreProjects2");
+    var mp3 = document.getElementById("moreProjects3");
+    var mp4 = document.getElementById("moreProjects4");
     
   //  var targetDiv = document.getElementById("swiperImage").getElementsByClassName("swiper-slide")[0];
     var arrSlider = document.getElementById("swiperImage").getElementsByClassName("swiper-slide");
@@ -34,6 +37,10 @@ if (window.location.pathname == '/project-page.html') {
     **/
     switch (projectName) {
   case 'event-with-us':
+            mp1.src = "ewmpics/hpms.gif";
+            mp2.src = "SimpleTweet.png";
+            mp3.src = "InstagramParse.png";
+            mp4.src = "Persist.png";
             document.getElementById("videoPlayer").style.visibility="visibile";
             document.getElementById("videoPlayer2").style.visibility="visible";
             document.getElementById("videoPlayer3").style.visibility="visible"; 
@@ -53,23 +60,27 @@ if (window.location.pathname == '/project-page.html') {
             contr3Link.href = "https://github.com/The-Yigit"
             contr3Name.innerHTML = "Yigit"
             document.getElementById("resourcelink").href="https://github.com/EventWithMe/EventWithMe"
-             document.getElementById("logo").src="event-with-melogo.png";
+             document.getElementById("logo").src="https://i.imgur.com/vPoNznv.png";
   //   document.getElementById("award").textContent = " Third place Code Path Nationals"
              document.getElementById("videoPlayer").src = ewmURL[2];
              document.getElementById("videoPlayer2").src = ewmURL[1];
             document.getElementById("videoPlayer3").src = ewmURL[0];
             document.getElementById("dateText").textContent = "10-01-2021"
-            document.getElementById("ts1image").src="AndroidStudio.png";
-            document.getElementById("ts2image").src="parse.png";
+            document.getElementById("ts1image").src="https://i.imgur.com/yaihpYc.png";
+            document.getElementById("ts2image").src="https://i.imgur.com/m6TCvqh.png";
              document.getElementById("ts3image").src="https://i.imgur.com/A1vKsNA.png";
-            document.getElementById("ts4image").src="googlemaps.png";
+            document.getElementById("ts4image").src="https://i.imgur.com/c8lpERG.png";
             document.getElementById("para1").textContent = "EventWithMe allows people to connect with each other over events. Users find events near them and favorite them to track them and then connect to their favorited event group chats. This app won us 3rd place in the CodePath Nationals competition fall 2021!";
    //  document.getElementById("techstack").textContent = ""       
-     arrSlider[3].style.backgroundImage="url(ewmpics/Final_Product.gif)";
+     arrSlider[3].style.backgroundImage="url(https://i.imgur.com/GES1TOv.png)";
     arrSlider[3].style.backgroundSize = "200px 400px";
     break;
   case 'hotelverse':
-       arrSlider[0].style.backgroundImage="url(ewmpics/hpms.gif)";
+            mp1.src = "ewmpics/event-with-me.png";
+            mp2.src = "SimpleTweet.png";
+            mp3.src = "InstagramParse.png";
+            mp4.src = "Persist.png";
+       arrSlider[0].style.backgroundImage="url(https://i.imgur.com/QWT7xem.png)";
        skillBar1.style.width= '1180.000px'
        skillBarSpan.textContent = "95.3%"
        skillBar2.style.width = '60px'
@@ -89,19 +100,23 @@ if (window.location.pathname == '/project-page.html') {
        document.getElementById("videoPlayer").style.visibility="hidden";
        document.getElementById("videoPlayer2").style.visibility="hidden";
        document.getElementById("videoPlayer3").style.visibility="hidden";   
-       document.getElementById("logo").src="hotelverse.png"
+       document.getElementById("logo").src="https://i.imgur.com/UqM8RwQ.png"
        document.getElementById("para1").textContent = "Hotelverse is a hotel management system that allows an organization’s userbase to make accounts to book and manage reservations at hotels that are listed and managed by the organization.";
-        document.getElementById("ts1image").src="Intellij.png"
-        document.getElementById("ts2image").src="Mysql.png"
-        document.getElementById("ts3image").src="aws.png" 
-        document.getElementById("ts4image").src="javafx.png" 
+        document.getElementById("ts1image").src="https://i.imgur.com/HuxphUE.png"
+        document.getElementById("ts2image").src="https://i.imgur.com/SBUMGEx.png"
+        document.getElementById("ts3image").src="https://i.imgur.com/iGJjSjb.png" 
+        document.getElementById("ts4image").src="https://i.imgur.com/KXdLASe.png" 
             break;
    case 'SimpleTweet':
+            mp1.src = "ewmpics/event-with-me.png";
+            mp2.src = "ewmpics/hpms.gif";
+            mp3.src = "InstagramParse.png";
+            mp4.src = "Persist.png";
             for(let i = 0; i < arrSlider.length; i++){
                 arrSlider[i].style.backgroundSize = "200px 400px";
             }
-            arrSlider[0].style.backgroundImage="url(twitterappwalkthrough.gif)";
-            arrSlider[1].style.backgroundImage="url(twitterAppPart2.gif)";
+            arrSlider[0].style.backgroundImage="url(https://i.imgur.com/nOM4i7z.png)";
+            arrSlider[1].style.backgroundImage="url(https://i.imgur.com/lf7tB6J.png)";
        
        skillBar1.style.width= '1249.000px'
        skillBarSpan.textContent = "100.0%"
@@ -118,10 +133,10 @@ if (window.location.pathname == '/project-page.html') {
        document.getElementById("videoPlayer").style.visibility="hidden";
        document.getElementById("videoPlayer2").style.visibility="hidden";
        document.getElementById("videoPlayer3").style.visibility="hidden";   
-       document.getElementById("logo").src="simpletweetlogo.png"
+       document.getElementById("logo").src="https://i.imgur.com/bo84bve.png"
        document.getElementById("para1").textContent = "SimpleTweet is an android app that allows a user to view his Twitter timeline. The app utilizes Twitter REST API. User can sign in to Twitter using OAuth login, and User can refresh tweets timeline by pulling down to refresh";
-        document.getElementById("ts1image").src="AndroidStudio.png"
-        document.getElementById("ts2image").src="simpletweetlogo.png"
+        document.getElementById("ts1image").src="https://i.imgur.com/yaihpYc.png"
+        document.getElementById("ts2image").src="https://i.imgur.com/bo84bve.png"
         document.getElementById("ts3image").style.visibility="hidden";
         document.getElementById("ts4image").style.visibility="hidden";
   
@@ -132,10 +147,15 @@ if (window.location.pathname == '/project-page.html') {
     break;
             
     case 'Instagram-Parse':
+            mp1.src = "ewmpics/event-with-me.png";
+            mp2.src = "ewmpics/hpms.gif";
+            mp3.src = "SimpleTweet.png";
+            mp4.src = "Persist.png";
              for(let i = 0; i < arrSlider.length; i++){
-                arrSlider[i].style.backgroundSize = "200px 400px";
+                arrSlider[i].style.backgroundSize = "250px 500px";
             }
-            arrSlider[0].style.backgroundImage="url(InstagramParse.gif)";
+            arrSlider[0].style.backgroundImage="url(https://i.imgur.com/Tuu2qlU.png)";
+            arrSlider[1].style.backgroundImage="url(https://i.imgur.com/u83m9Tp.png)";
             
        
        skillBar1.style.width= '1249.000px'
@@ -153,10 +173,10 @@ if (window.location.pathname == '/project-page.html') {
        document.getElementById("videoPlayer").style.visibility="hidden";
        document.getElementById("videoPlayer2").style.visibility="hidden";
        document.getElementById("videoPlayer3").style.visibility="hidden";   
-       document.getElementById("logo").src="InstagramParselogo.png"
+       document.getElementById("logo").src="https://i.imgur.com/vRMwiMb.png"
        document.getElementById("para1").textContent = "ParserInstagramClone is a photo sharing app similar to Instagram but using Parse as its backend.User can view the last 20 posts submitted to Instagram.";
-        document.getElementById("ts1image").src="AndroidStudio.png"
-        document.getElementById("ts2image").src="parse.png"
+        document.getElementById("ts1image").src="https://i.imgur.com/yaihpYc.png"
+        document.getElementById("ts2image").src="https://i.imgur.com/m6TCvqh.png"
         document.getElementById("ts3image").style.visibility="hidden";
         document.getElementById("ts4image").style.visibility="hidden";
   
@@ -165,10 +185,14 @@ if (window.location.pathname == '/project-page.html') {
     break;
             
     case 'Flixter':
+            mp1.src = "ewmpics/event-with-me.png";
+            mp2.src = "ewmpics/hpms.gif";
+            mp3.src = "SimpleTweet.png";
+            mp4.src = "Persist.png";
               for(let i = 0; i < arrSlider.length; i++){
-                arrSlider[i].style.backgroundSize = "400px 400px";
+                arrSlider[i].style.backgroundSize = "600px 600px";
             }
-            arrSlider[0].style.backgroundImage="url(Flixter.gif)";
+            arrSlider[0].style.backgroundImage="url(https://i.imgur.com/B5zy586.png)";
             
        
        skillBar1.style.width= '1249.000px'
@@ -186,16 +210,20 @@ if (window.location.pathname == '/project-page.html') {
        document.getElementById("videoPlayer").style.visibility="hidden";
        document.getElementById("videoPlayer2").style.visibility="hidden";
        document.getElementById("videoPlayer3").style.visibility="hidden";   
-       document.getElementById("logo").src="Flixterlogo.png"
+       document.getElementById("logo").src="https://i.imgur.com/Wq7xxJv.png"
        document.getElementById("para1").textContent = "Flixter shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.";
-        document.getElementById("ts1image").src="AndroidStudio.png"
-        document.getElementById("ts2image").src="parse.png"
-        document.getElementById("ts3image").src="Flixterlogo.png";
+        document.getElementById("ts1image").src="https://i.imgur.com/yaihpYc.png"
+        document.getElementById("ts2image").src="https://i.imgur.com/m6TCvqh.png"
+        document.getElementById("ts3image").src="https://i.imgur.com/Wq7xxJv.png";
         document.getElementById("ts4image").style.visibility="hidden";
             
             
     break;
     case 'Persist':
+            mp1.src = "ewmpics/event-with-me.png";
+            mp2.src = "ewmpics/hpms.gif";
+            mp3.src = "SimpleTweet.png";
+            mp4.src = "flixter.png";
              for(let i = 0; i < arrSlider.length; i++){
                 arrSlider[i].style.backgroundSize = "400px 600px";
             }
@@ -218,9 +246,9 @@ if (window.location.pathname == '/project-page.html') {
       document.getElementById("videoPlayer").src = "https://www.youtube.com/embed/vOHE3yScN1c";
        document.getElementById("videoPlayer2").style.visibility="hidden";
        document.getElementById("videoPlayer3").style.visibility="hidden";   
-       document.getElementById("logo").src="Persistlogo.png"
+       document.getElementById("logo").src="https://i.imgur.com/XpivqdK.png"
        document.getElementById("para1").textContent = "Android app which motivates you to keep going when things feel hard, witch the quick swipe feature you can quickly view images that inspire, motivate, and get you back on your feet to accomplish your goals. built with android studio using java , used stored png,jpeg data and simulator for androids lollipop and up versions";
-        document.getElementById("ts1image").src="AndroidStudio.png"
+        document.getElementById("ts1image").src="https://i.imgur.com/yaihpYc.png"
         document.getElementById("ts2image").style.visibility="hidden";
         document.getElementById("ts3image").style.visibility="hidden";
         document.getElementById("ts4image").style.visibility="hidden";
