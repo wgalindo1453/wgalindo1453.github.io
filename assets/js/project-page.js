@@ -37,10 +37,10 @@ if (window.location.pathname == '/project-page.html') {
     **/
     switch (projectName) {
   case 'event-with-us':
-            mp1.src = "ewmpics/hpms.gif";
-            mp2.src = "SimpleTweet.png";
-            mp3.src = "InstagramParse.png";
-            mp4.src = "Persist.png";
+            mp1.src = "https://i.imgur.com/QWT7xem.png";//hpms
+            mp2.src = "https://i.imgur.com/7WNRaev.png";
+            mp3.src = "https://i.imgur.com/siqnps5.png";
+            mp4.src = "https://i.imgur.com/iWu6ank.png";
             document.getElementById("videoPlayer").style.visibility="visibile";
             document.getElementById("videoPlayer2").style.visibility="visible";
             document.getElementById("videoPlayer3").style.visibility="visible"; 
@@ -76,10 +76,10 @@ if (window.location.pathname == '/project-page.html') {
     arrSlider[3].style.backgroundSize = "200px 400px";
     break;
   case 'hotelverse':
-            mp1.src = "ewmpics/event-with-me.png";
-            mp2.src = "SimpleTweet.png";
-            mp3.src = "InstagramParse.png";
-            mp4.src = "Persist.png";
+            mp1.src = "https://i.imgur.com/nanxk5q.png";
+            mp2.src = "https://i.imgur.com/7WNRaev.png";
+            mp3.src = "https://i.imgur.com/siqnps5.png";
+            mp4.src = "https://i.imgur.com/iWu6ank.png";
        arrSlider[0].style.backgroundImage="url(https://i.imgur.com/QWT7xem.png)";
        skillBar1.style.width= '1180.000px'
        skillBarSpan.textContent = "95.3%"
@@ -108,10 +108,10 @@ if (window.location.pathname == '/project-page.html') {
         document.getElementById("ts4image").src="https://i.imgur.com/KXdLASe.png" 
             break;
    case 'SimpleTweet':
-            mp1.src = "ewmpics/event-with-me.png";
-            mp2.src = "ewmpics/hpms.gif";
-            mp3.src = "InstagramParse.png";
-            mp4.src = "Persist.png";
+            mp1.src = "https://i.imgur.com/nanxk5q.png";
+            mp2.src = "https://i.imgur.com/siqnps5.png";
+            mp3.src = "https://i.imgur.com/siqnps5.png";
+            mp4.src = "https://i.imgur.com/iWu6ank.png";
             for(let i = 0; i < arrSlider.length; i++){
                 arrSlider[i].style.backgroundSize = "200px 400px";
             }
@@ -147,10 +147,10 @@ if (window.location.pathname == '/project-page.html') {
     break;
             
     case 'Instagram-Parse':
-            mp1.src = "ewmpics/event-with-me.png";
-            mp2.src = "ewmpics/hpms.gif";
-            mp3.src = "SimpleTweet.png";
-            mp4.src = "Persist.png";
+            mp1.src = "https://i.imgur.com/nanxk5q.png";
+            mp2.src = "https://i.imgur.com/G2yUlDu.png";
+            mp3.src = "https://i.imgur.com/7WNRaev.png";
+            mp4.src = "https://i.imgur.com/iWu6ank.png";
              for(let i = 0; i < arrSlider.length; i++){
                 arrSlider[i].style.backgroundSize = "250px 500px";
             }
@@ -185,10 +185,10 @@ if (window.location.pathname == '/project-page.html') {
     break;
             
     case 'Flixter':
-            mp1.src = "ewmpics/event-with-me.png";
-            mp2.src = "ewmpics/hpms.gif";
-            mp3.src = "SimpleTweet.png";
-            mp4.src = "Persist.png";
+            mp1.src = "https://i.imgur.com/nanxk5q.png";
+            mp2.src = "https://i.imgur.com/siqnps5.png";
+            mp3.src = "https://i.imgur.com/7WNRaev.png";
+            mp4.src = "https://i.imgur.com/iWu6ank.png";
               for(let i = 0; i < arrSlider.length; i++){
                 arrSlider[i].style.backgroundSize = "600px 600px";
             }
@@ -220,10 +220,10 @@ if (window.location.pathname == '/project-page.html') {
             
     break;
     case 'Persist':
-            mp1.src = "ewmpics/event-with-me.png";
-            mp2.src = "ewmpics/hpms.gif";
-            mp3.src = "SimpleTweet.png";
-            mp4.src = "flixter.png";
+            mp1.src = "https://i.imgur.com/nanxk5q.png";
+            mp2.src = "https://i.imgur.com/siqnps5.png";
+            mp3.src = "https://i.imgur.com/7WNRaev.png";
+            mp4.src = "https://i.imgur.com/G2yUlDu.png";
              for(let i = 0; i < arrSlider.length; i++){
                 arrSlider[i].style.backgroundSize = "400px 600px";
             }
