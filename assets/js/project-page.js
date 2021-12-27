@@ -61,7 +61,7 @@ if (window.location.pathname == '/project-page.html') {
             document.getElementById("dateText").textContent = "10-01-2021"
             document.getElementById("ts1image").src="AndroidStudio.png";
             document.getElementById("ts2image").src="parse.png";
-             document.getElementById("ts3image").src="ticketmaster.png";
+             document.getElementById("ts3image").src="https://i.imgur.com/A1vKsNA.png";
             document.getElementById("ts4image").src="googlemaps.png";
             document.getElementById("para1").textContent = "EventWithMe allows people to connect with each other over events. Users find events near them and favorite them to track them and then connect to their favorited event group chats. This app won us 3rd place in the CodePath Nationals competition fall 2021!";
    //  document.getElementById("techstack").textContent = ""       
