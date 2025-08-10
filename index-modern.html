@@ -81,10 +81,13 @@
     <!-- Dark Mode Switch -->
     <div class="container position-absolute top-0 end-0" style="z-index: 1030; margin-top: 1rem;">
         <div class="d-flex justify-content-end">
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="darkSwitch">
-                    <input type="checkbox" id="darkSwitch" />
-                </label>
+            <div class="d-flex align-items-center">
+                <i class="fas fa-sun me-2"></i>
+                <div class="custom-control custom-switch">
+                    <input class="custom-control-input" type="checkbox" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch"></label>
+                </div>
+                <i class="fas fa-moon ms-2"></i>
             </div>
         </div>
     </div>
@@ -95,7 +98,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content animate-slide-in-left">
                     <h1 class="display-4 fw-bold mb-4">
-                        Hi, I'm <span style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">William!</span>
+                        Hi, I'm <span class="gradient-text">William!</span>
                     </h1>
                     <p class="lead mb-4">
                         I'm a passionate Software Engineer with a Marine's work ethic, specializing in building innovative applications and solving complex problems. Currently pursuing advanced studies in Computer Science.

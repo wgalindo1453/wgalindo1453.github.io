@@ -1,5 +1,43 @@
 if (window.location.pathname == '/connect.html') {
     
+    // Discord functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        // Replace 'YOUR_DISCORD_USERNAME' with your actual Discord username
+        const discordUsername = 'YOUR_DISCORD_USERNAME'; // Update this!
+        
+        // Discord invite link (you can customize this)
+        const discordInviteLink = `https://discord.com/users/${discordUsername}`;
+        
+        // Update Discord links
+        const discordLink = document.getElementById('discordLink');
+        const discordFooterLink = document.getElementById('discordFooterLink');
+        
+        if (discordLink) {
+            discordLink.href = discordInviteLink;
+            discordLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Copy Discord username to clipboard
+                navigator.clipboard.writeText(discordUsername).then(function() {
+                    // Show success message
+                    const originalText = discordLink.innerHTML;
+                    discordLink.innerHTML = '<i class="fas fa-check me-2"></i>Username Copied!';
+                    discordLink.classList.add('btn-success');
+                    
+                    setTimeout(() => {
+                        discordLink.innerHTML = originalText;
+                        discordLink.classList.remove('btn-success');
+                    }, 2000);
+                }).catch(function() {
+                    // Fallback: open Discord link
+                    window.open(discordInviteLink, '_blank');
+                });
+            });
+        }
+        
+        if (discordFooterLink) {
+            discordFooterLink.href = discordInviteLink;
+        }
+    });
     
    function validateContactForm() {
             var valid = true;
