@@ -24,9 +24,10 @@
     <link rel="stylesheet" href="assets/css/Modern-Contact-Form.css">
     <link rel="stylesheet" href="assets/css/MySkills-F19687.css">
     <link rel="stylesheet" href="assets/css/modern-improvements.css">
+    <link rel="stylesheet" href="assets/css/Video-Responsive-YouTube.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
 </head>
 
 <body>
@@ -80,23 +81,68 @@
                 </div>
                 <div id="projectImage" class="image">
                     <div class="w-100"></div>
-                    <div class="simple-slider">
-                        <div class="swiper-container">
-                            <div id="swiperImage" class="swiper-wrapper">
-                                <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat, url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;);">
-                                    <div class="d-flex" style="position: relative;overflow: hidden;padding-top: 56.25%;"><iframe class="d-flex flex-shrink-1 align-items-start" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ScMzIvxBSi4" id="videoPlayer" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;"></iframe></div>
+                    <div class="modern-video-showcase">
+                        <div class="video-grid">
+                            <!-- Video Card 1 -->
+                            <div class="video-card featured">
+                                <div class="video-thumbnail">
+                                    <div class="video-container">
+                                        <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ScMzIvxBSi4" id="videoPlayer" class="video-iframe"></iframe>
+                                    </div>
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;">
-                                    <div class="d-flex" style="position: relative;overflow: hidden;padding-top: 56.25%;"><iframe class="d-flex flex-shrink-1 flex-fill align-items-start" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ScMzIvxBSi4" id="videoPlayer2" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;"></iframe></div>
+                                <div class="video-info">
+                                    <h4>Main Demo</h4>
+                                    <p>Watch the full project demonstration</p>
                                 </div>
-                                <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;">
-                                    <div style="position: relative;overflow: hidden;padding-top: 56.25%;"><iframe class="d-flex flex-shrink-1 flex-fill align-items-start" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ScMzIvxBSi4" id="videoPlayer3" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;"></iframe></div>
-                                </div>
-                                <div class="d-flex swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
                             </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            
+                            <!-- Video Card 2 -->
+                            <div class="video-card">
+                                <div class="video-thumbnail">
+                                    <div class="video-container">
+                                        <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ScMzIvxBSi4" id="videoPlayer2" class="video-iframe"></iframe>
+                                    </div>
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Walkthrough</h4>
+                                    <p>Step-by-step feature overview</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Video Card 3 -->
+                            <div class="video-card">
+                                <div class="video-thumbnail">
+                                    <div class="video-container">
+                                        <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/ScMzIvxBSi4" id="videoPlayer3" class="video-iframe"></iframe>
+                                    </div>
+                                    <div class="play-overlay">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4>Code Review</h4>
+                                    <p>Technical implementation details</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Image Card -->
+                            <div class="image-card">
+                                <div class="image-thumbnail" style="background: url('https://cdn.bootstrapstudio.io/placeholders/1400x800.png') center center / cover no-repeat;">
+                                    <div class="image-overlay">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                </div>
+                                <div class="image-info">
+                                    <h4>Project Screenshots</h4>
+                                    <p>Visual project overview</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,7 +211,7 @@
                             <div class="item"><a id="mp3ref" href="projects-grid-cards.html"><img class="img-fluid d-flex scale-on-hover" id="moreProjects3" src="assets/img/tech/image4.jpg"></a></div>
                         </div>
                         <div class="col-md-4 col-lg-3 d-flex">
-                            <div class="item"><a id="mp4ref" href="projects-page.html"><img class="img-fluid d-flex scale-on-hover" id="moreProjects4" src="assets/img/ewmpics/image5.jpg"></a></div>
+                            <div class="item"><a id="mp4ref" href="project-page.html"><img class="img-fluid d-flex scale-on-hover" id="moreProjects4" src="assets/img/ewmpics/image5.jpg"></a></div>
                         </div>
                     </div>
                 </div>
@@ -174,8 +220,8 @@
     </main>
     <footer class="page-footer">
         <div class="container">
-            <div class="links"><a data-bss-hover-animate="pulse" href="about-me.html" style="font-family: Amiri, serif;font-size: 20px;">About me</a><a data-bss-hover-animate="pulse" href="connect.html" style="font-family: Amiri, serif;font-size: 20px;">Contact me</a><a data-bss-hover-animate="pulse" href="projects-grid-cards.html" style="font-family: Amiri, serif;font-size: 20px;">Projects</a></div>
-            <div class="social-icons"><a data-bss-hover-animate="pulse" href="https://github.com/wgalindo1453" style="color: var(--bs-blue);"><i class="icon ion-social-github"></i></a><a data-bss-hover-animate="pulse" href="https://www.linkedin.com/in/william-g-51b01775/" style="color: var(--bs-blue);"><i class="icon ion-social-linkedin"></i></a><a data-bss-hover-animate="pulse" href="https://twitter.com/Will1453" style="color: var(--bs-blue);"><i class="icon ion-social-twitter"></i></a></div>
+            <div class="links"><a data-bss-hover-animate="pulse" href="about-me.html" style="font-family: Amiri, serif;font-size: 20px;">About me</a><a data-bss-hover-animate="pulse" href="connect.html" style="font-family: Amiri, serif;font-size: 20px;">Contact me</a><a data-bss-hover-animate="pulse" href="projects-grid-cards.html" style="font-family: Amiri, serif;font-size: 20px;">Projects</a><a data-bss-hover-animate="pulse" href="2025WGResume-1.pdf" style="font-family: Amiri, serif;font-size: 20px;" target="_blank">Resume</a></div>
+            <div class="social-icons"><a data-bss-hover-animate="pulse" href="https://github.com/wgalindo1453" style="color: var(--bs-blue);"><i class="icon ion-social-github"></i></a><a data-bss-hover-animate="pulse" href="https://www.linkedin.com/in/william-g-51b01775/" style="color: var(--bs-blue);"><i class="icon ion-social-linkedin"></i></a><a data-bss-hover-animate="pulse" href="https://twitter.com/Will1453" style="color: var(--bs-blue);"><i class="icon ion-social-twitter"></i></a><a data-bss-hover-animate="pulse" href="#" id="discordFooterLink" style="color: var(--bs-blue);"><i class="fab fa-discord"></i></a><a data-bss-hover-animate="pulse" href="https://frogtutoring.com/tutors/111687" style="color: var(--bs-blue);"><i class="fas fa-chalkboard-teacher"></i></a></div>
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -183,12 +229,9 @@
     <script src="assets/js/connect.js"></script>
     <script src="assets/js/Dark-Mode-Switch.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/Loading-Page-Animation-Style.js"></script>
     <script src="assets/js/project-page.js"></script>
-    <script src="assets/js/projects-grid-cards.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/theme.js"></script>
 </body>
 

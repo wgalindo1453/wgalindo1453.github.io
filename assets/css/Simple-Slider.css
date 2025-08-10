@@ -5,6 +5,14 @@
   background-position: center;
 }
 
+/* Ensure video slides are properly centered */
+.simple-slider .swiper-slide.video-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .simple-slider .swiper-button-next, .simple-slider .swiper-button-prev {
   width: 50px;
   margin-left: 20px;

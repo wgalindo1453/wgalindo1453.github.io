@@ -1,83 +1,107 @@
-
-if (window.location.pathname == '/projects-grid-cards.html') {
-   
-//document.getElementById("funProject1").src = "https://i.imgur.com/xos9GKH.png"
- // document.getElementById("funProject2").src = "https://i.imgur.com/xos9GKH.png"
- 
+// Global function for handling project navigation
+function myfunction(imgPath, projectName) {
+    localStorage.setItem("imgPathName", imgPath);
+    localStorage.setItem("ProjectName", projectName);
     
-     document.getElementById("Persist").onclick = function() {
-   var imgPath6 = document.getElementById("Persist").getAttribute("src");
-          var element = document.getElementById("Persist");
-      var name6 = element.id;
-  myfunction(imgPath6, name6);
-  };
+    // Debug logging
+    console.log("Setting localStorage - ProjectName:", projectName, "imgPathName:", imgPath);
     
-     document.getElementById("Flixter").onclick = function() {
-   var imgPath5 = document.getElementById("Flixter").getAttribute("src");
-          var element = document.getElementById("Flixter");
-      var name5 = element.id;
-  myfunction(imgPath5, name5);
-  };
-    
-     document.getElementById("Instagram-Parse").onclick = function() {
-   var imgPath4 = document.getElementById("Instagram-Parse").getAttribute("src");
-          var element = document.getElementById("Instagram-Parse");
-      var name4 = element.id;
-  myfunction(imgPath4, name4);
-  };
-    
-     document.getElementById("SimpleTweet").onclick = function() {
-   var imgPath3 = document.getElementById("SimpleTweet").getAttribute("src");
-          var element = document.getElementById("SimpleTweet");
-      var name3 = element.id;
-  myfunction(imgPath3, name3);
-  };
-    
-   
-    document.getElementById("hotelverse").onclick = function() {
-   var imgPath2 = document.getElementById("hotelverse").getAttribute("src");
-        var element = document.getElementById("hotelverse");
-      var name2 = element.id;
-  myfunction(imgPath2, name2);
-  };
-    
-    
- 
-  document.getElementById("event-with-us").onclick = function() {
-   var imgPath1 = document.getElementById("event-with-us").getAttribute("src");
-    var element = document.getElementById("event-with-us");
-      var name = element.id;
-  myfunction(imgPath1, name);
-  };
-    
- function myfunction(imgPath, projectName) {
-// var imgpath = document.getElementById("eventme").getAttribute("src");
-    // alert(imgPath);
-     localStorage.setItem("imgPathName",imgPath);
-     localStorage.setItem("ProjectName",projectName);
-     
+    // Navigate to project page after setting localStorage
+    window.location.href = 'project-page.html';
 }
-    
-    
-    
- //  window.onload = function() {
-     //   var imgPath= document.getElementsByTagName('a');
-        
-       // }
-  //  }
 
-   // window.onload = function() {  
+// Debug: Log the current pathname
+console.log("Current pathname:", window.location.pathname);
+console.log("Current href:", window.location.href);
+
+// Check if we're on the projects page (handle both relative and absolute paths)
+if (window.location.pathname.includes('projects-grid-cards.html') || 
+    window.location.href.includes('projects-grid-cards.html') ||
+    window.location.pathname.endsWith('/') || 
+    window.location.pathname === '') {
+    
+    console.log("Projects page detected, setting up event listeners...");
+    
+    // Add event listeners for project images when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("DOM loaded, setting up click handlers...");
         
-   // var getInput = prompt("Hey type something here: ");
-   //localStorage.setItem("storageName",getInput);
-  
-   
-   
-  
-    
-   
-    
-    
+        // EventWithMe project
+        const eventWithMeImg = document.getElementById('event-with-us');
+        if (eventWithMeImg) {
+            console.log("Found EventWithMe image, adding click handler");
+            eventWithMeImg.addEventListener('click', function() {
+                console.log("EventWithMe clicked!");
+                myfunction('assets/img/ewmpics/event-with-me.png', 'event-with-us');
+            });
+        } else {
+            console.log("EventWithMe image not found");
+        }
+        
+        // Hotelverse project
+        const hotelverseImg = document.getElementById('hotelverse');
+        if (hotelverseImg) {
+            console.log("Found Hotelverse image, adding click handler");
+            hotelverseImg.addEventListener('click', function() {
+                console.log("Hotelverse clicked!");
+                myfunction('assets/img/ewmpics/hpms.gif', 'hotelverse');
+            });
+        } else {
+            console.log("Hotelverse image not found");
+        }
+        
+        // SimpleTweet project
+        const simpleTweetImg = document.getElementById('SimpleTweet');
+        if (simpleTweetImg) {
+            console.log("Found SimpleTweet image, adding click handler");
+            simpleTweetImg.addEventListener('click', function() {
+                console.log("SimpleTweet clicked!");
+                myfunction('assets/img/SimpleTweet.png', 'SimpleTweet');
+            });
+        } else {
+            console.log("SimpleTweet image not found");
+        }
+        
+        // Instagram-Parse project
+        const instagramParseImg = document.getElementById('Instagram-Parse');
+        if (instagramParseImg) {
+            console.log("Found Instagram-Parse image, adding click handler");
+            instagramParseImg.addEventListener('click', function() {
+                console.log("Instagram-Parse clicked!");
+                myfunction('assets/img/InstagramParse.png', 'Instagram-Parse');
+            });
+        } else {
+            console.log("Instagram-Parse image not found");
+        }
+        
+        // Flixter project
+        const flixterImg = document.getElementById('Flixter');
+        if (flixterImg) {
+            console.log("Found Flixter image, adding click handler");
+            flixterImg.addEventListener('click', function() {
+                console.log("Flixter clicked!");
+                myfunction('assets/img/flixter.png', 'Flixter');
+            });
+        } else {
+            console.log("Flixter image not found");
+        }
+        
+        // Persist project
+        const persistImg = document.getElementById('Persist');
+        if (persistImg) {
+            console.log("Found Persist image, adding click handler");
+            persistImg.addEventListener('click', function() {
+                console.log("Persist clicked!");
+                myfunction('assets/img/Persist.png', 'Persist');
+            });
+        } else {
+            console.log("Persist image not found");
+        }
+        
+        console.log("All event listeners set up");
+    });
+} else {
+    console.log("Not on projects page, skipping event listener setup");
 }
 
 
