@@ -73,15 +73,29 @@
         }
         
         .blog-meta {
-            color: #9ca3af;
+            color: var(--text-secondary);
             font-size: 0.9rem;
             margin-bottom: 1.5rem;
         }
         
         .blog-excerpt {
-            color: #d1d5db;
+            color: var(--text-primary);
             line-height: 1.6;
             margin-bottom: 1.5rem;
+        }
+        
+        /* Dark mode support for blog page */
+        [data-theme="dark"] .blog-meta {
+            color: #9ca3af;
+        }
+        
+        [data-theme="dark"] .blog-excerpt {
+            color: #d1d5db;
+        }
+        
+        [data-theme="dark"] .blog-header {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .read-more-btn {

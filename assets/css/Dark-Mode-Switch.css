@@ -1,17 +1,45 @@
 [data-theme="dark"] {
-  background-color: #111 !important;
-  color: #eee;
+  background-color: #111827 !important;
+  color: #f9fafb;
 }
 
 [data-theme="dark"] .bg-light {
-  background-color: #333 !important;
+  background-color: #1f2937 !important;
 }
 
 [data-theme="dark"] .bg-white {
-  background-color: #000 !important;
+  background-color: #111827 !important;
 }
 
 [data-theme="dark"] .bg-black {
-  background-color: #eee !important;
+  background-color: #f9fafb !important;
+}
+
+/* Dark mode text improvements */
+[data-theme="dark"] .text-muted {
+  color: #9ca3af !important;
+}
+
+[data-theme="dark"] .text-secondary {
+  color: #d1d5db !important;
+}
+
+[data-theme="dark"] .text-dark {
+  color: #f9fafb !important;
+}
+
+[data-theme="dark"] .text-light {
+  color: #111827 !important;
+}
+
+/* Dark mode card improvements */
+[data-theme="dark"] .modern-card {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
 }
 
